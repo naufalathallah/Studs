@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:layout_above="@+id/nav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/user"
+                android:layout_gravity="center"
+                android:layout_below="@id/judul"/>
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_below="@id/pp"/>
+
+            <TextView
+                android:id="@+id/unameuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="naufalathllah"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/uname"/>
+
+            <TextView
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poin"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_below="@id/unameuser"/>
+
+            <TextView
+                android:id="@+id/pointuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/point"/>
+
+            <Button
+                android:id="@+id/btLogout"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Keluar"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/nav">
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_home_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btrecord"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_play_arrow_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btbooked"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_calendar_month_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btprofile"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_person_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</RelativeLayout>

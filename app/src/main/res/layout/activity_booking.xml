@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Studio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/studio"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="150dp" />
+
+    <EditText
+        android:id="@+id/tgl"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Tanggal"
+        android:layout_below="@+id/studio"
+        android:drawableStart="@drawable/ic_date"
+        />
+
+    <Spinner
+        android:id="@+id/jam"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tgl"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="150dp" />
+
+    <Button
+        android:id="@+id/btBooking"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Book" />
+
+    <Button
+        android:id="@+id/btHistory"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btBooking"
+        android:layout_marginTop="50dp"
+        android:text="History"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/nav">
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_home_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btrecord"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_play_arrow_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btbooked"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_calendar_month_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btprofile"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_person_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</RelativeLayout>

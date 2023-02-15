@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Studs"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Username"
+        android:layout_below="@+id/judul"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username"/>
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Masuk"
+        android:layout_below="@+id/password"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Buat Akun Baru"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btlogin"/>
+</RelativeLayout>
